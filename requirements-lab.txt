@@ -1,0 +1,7 @@
+# Install on top of the instructor's validated Linux CANN/PyTorch/torch_npu image.
+# Do NOT pip-install a random package named torchair. Use the matching Ascend distribution.
+transformers==5.3.0
+tokenizers==0.22.2
+huggingface-hub==1.6.0
+safetensors==0.7.0
+numpy==2.2.6

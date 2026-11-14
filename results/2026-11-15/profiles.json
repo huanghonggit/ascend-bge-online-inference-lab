@@ -1,0 +1,670 @@
+{
+  "profile_A_bf16_r01": {
+    "kernels_per_step": 652.0,
+    "computing_ms": 13.68041133333334,
+    "free_ms": 25.25445333333338,
+    "spans": [
+      {
+        "step": "2",
+        "span_ms": 37.49325,
+        "union_ms": 13.68625,
+        "gap_ms": 23.807
+      },
+      {
+        "step": "3",
+        "span_ms": 37.01775,
+        "union_ms": 13.65225,
+        "gap_ms": 23.3655
+      },
+      {
+        "step": "4",
+        "span_ms": 41.25525,
+        "union_ms": 13.68125,
+        "gap_ms": 27.574
+      }
+    ],
+    "kernels": [
+      {
+        "name": "aclnnAddmm_MatMulV3Common_MatMulV3",
+        "count_per_step": 48.0,
+        "ms_per_step": 3.6872083333333334
+      },
+      {
+        "name": "aclnnAddmm_MatMulCommon_MatMulV2",
+        "count_per_step": 96.0,
+        "ms_per_step": 2.0714023333333333
+      },
+      {
+        "name": "aclnnLayerNormWithImplMode_LayerNormV4_LayerNormV4",
+        "count_per_step": 49.0,
+        "ms_per_step": 1.573069
+      },
+      {
+        "name": "aclnnSoftmax_SoftmaxAiCore_SoftmaxV2",
+        "count_per_step": 24.0,
+        "ms_per_step": 1.3041863333333334
+      },
+      {
+        "name": "aclnnMatmul_TransposeAiCore_Transpose",
+        "count_per_step": 72.0,
+        "ms_per_step": 1.108482
+      },
+      {
+        "name": "aclnnAdd_AddAiCore_Add",
+        "count_per_step": 74.0,
+        "ms_per_step": 1.0954006666666667
+      },
+      {
+        "name": "aclnnGelu_Gelu_Gelu",
+        "count_per_step": 24.0,
+        "ms_per_step": 0.9884456666666667
+      },
+      {
+        "name": "aclnnMatmul_BatchMatMulNd_BatchMatMulV2",
+        "count_per_step": 48.0,
+        "ms_per_step": 0.615305
+      },
+      {
+        "name": "aclnnInplaceCopy_TransposeAiCore_Transpose",
+        "count_per_step": 24.0,
+        "ms_per_step": 0.3873803333333334
+      },
+      {
+        "name": "aclnnMuls_Muls_Muls",
+        "count_per_step": 24.0,
+        "ms_per_step": 0.334853
+      },
+      {
+        "name": "aclnnIndex_IndexAiCpu_Index",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.17180333333333334
+      },
+      {
+        "name": "aclnnAddmm_CastAiCore_Cast",
+        "count_per_step": 144.0,
+        "ms_per_step": 0.17101733333333333
+      },
+      {
+        "name": "aclnnEmbedding_GatherV2AiCore_GatherV2",
+        "count_per_step": 3.0,
+        "ms_per_step": 0.06427433333333334
+      },
+      {
+        "name": "aclnnArange_ArangeAiCore_Range",
+        "count_per_step": 5.0,
+        "ms_per_step": 0.029374
+      },
+      {
+        "name": "aclnnBitwiseAndTensor_LogicalAndAiCore_LogicalAnd",
+        "count_per_step": 2.0,
+        "ms_per_step": 0.017334000000000002
+      },
+      {
+        "name": "aclnnSWhere_SelectV2AiCore_SelectV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.014480666666666666
+      },
+      {
+        "name": "aclnnIndex_IndexCheck_IndexCheck",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.011174
+      },
+      {
+        "name": "aclnnLinalgVectorNorm_LpNormV2_LpNormV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.006854000000000001
+      },
+      {
+        "name": "aclnnDiv_BroadcastToAiCore_BroadcastTo",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0067733333333333335
+      },
+      {
+        "name": "aclnnInplaceCopy_CastAiCore_Cast",
+        "count_per_step": 2.0,
+        "ms_per_step": 0.003766666666666667
+      },
+      {
+        "name": "aclnnAdds_AddAiCore_Add",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0029733333333333335
+      },
+      {
+        "name": "aclnnGeScalar_GreaterEqual_GreaterEqual",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.002673333333333333
+      },
+      {
+        "name": "aclnnAll_ReduceAll_ReduceAll",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.00266
+      },
+      {
+        "name": "aclnnInplaceCopy_SliceAiCore_Slice",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0025266666666666666
+      },
+      {
+        "name": "aclnnClampMin_ClipByValueV2AiCore_ClipByValueV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0025
+      },
+      {
+        "name": "aclnnInplaceFillScalar_FillAiCore_Fill",
+        "count_per_step": 2.0,
+        "ms_per_step": 0.002347
+      },
+      {
+        "name": "aclnnDiv_RealDivAiCore_RealDiv",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0023333333333333335
+      }
+    ],
+    "host_selected_counts_per_step": {
+      "aten::copy_": 27.0,
+      "aten::_to_copy": 3.0,
+      "aten::to": 6.0,
+      "aten::reshape": 168.0,
+      "aten::transpose": 264.0,
+      "aten::_softmax": 24.0,
+      "aten::softmax": 24.0,
+      "aten::clone": 24.0,
+      "aten::contiguous": 24.0,
+      "aclnnLinalgVectorNorm": 1.0,
+      "aten::linalg_vector_norm": 1.0
+    }
+  },
+  "profile_A_fia_bsh_r01": {
+    "kernels_per_step": 461.0,
+    "computing_ms": 11.356657666666663,
+    "free_ms": 20.06178333333336,
+    "spans": [
+      {
+        "step": "2",
+        "span_ms": 31.134,
+        "union_ms": 11.353,
+        "gap_ms": 19.781
+      },
+      {
+        "step": "3",
+        "span_ms": 31.04275,
+        "union_ms": 11.34925,
+        "gap_ms": 19.6935
+      },
+      {
+        "step": "4",
+        "span_ms": 31.029,
+        "union_ms": 11.35425,
+        "gap_ms": 19.67475
+      }
+    ],
+    "kernels": [
+      {
+        "name": "aclnnAddmm_MatMulV3Common_MatMulV3",
+        "count_per_step": 48.0,
+        "ms_per_step": 3.6818963333333334
+      },
+      {
+        "name": "FusedInferAttentionScore",
+        "count_per_step": 24.0,
+        "ms_per_step": 2.131578
+      },
+      {
+        "name": "aclnnAddmm_MatMulCommon_MatMulV2",
+        "count_per_step": 96.0,
+        "ms_per_step": 2.0736456666666667
+      },
+      {
+        "name": "aclnnLayerNormWithImplMode_LayerNormV4_LayerNormV4",
+        "count_per_step": 49.0,
+        "ms_per_step": 1.549129
+      },
+      {
+        "name": "aclnnGelu_Gelu_Gelu",
+        "count_per_step": 24.0,
+        "ms_per_step": 0.9923000000000001
+      },
+      {
+        "name": "aclnnAdd_AddAiCore_Add",
+        "count_per_step": 50.0,
+        "ms_per_step": 0.408222
+      },
+      {
+        "name": "aclnnIndex_IndexAiCpu_Index",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.17012366666666667
+      },
+      {
+        "name": "aclnnAddmm_CastAiCore_Cast",
+        "count_per_step": 144.0,
+        "ms_per_step": 0.16451066666666667
+      },
+      {
+        "name": "aclnnEmbedding_GatherV2AiCore_GatherV2",
+        "count_per_step": 3.0,
+        "ms_per_step": 0.06513466666666666
+      },
+      {
+        "name": "aclnnArange_ArangeAiCore_Range",
+        "count_per_step": 5.0,
+        "ms_per_step": 0.030560666666666667
+      },
+      {
+        "name": "aclnnBitwiseAndTensor_LogicalAndAiCore_LogicalAnd",
+        "count_per_step": 2.0,
+        "ms_per_step": 0.020027
+      },
+      {
+        "name": "aclnnSWhere_SelectV2AiCore_SelectV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.013233333333333335
+      },
+      {
+        "name": "aclnnIndex_IndexCheck_IndexCheck",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.012527000000000002
+      },
+      {
+        "name": "aclnnLtScalar_LessAiCore_Less",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.009566666666666666
+      },
+      {
+        "name": "aclnnLinalgVectorNorm_LpNormV2_LpNormV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.006679999999999999
+      },
+      {
+        "name": "aclnnDiv_BroadcastToAiCore_BroadcastTo",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.005979999999999999
+      },
+      {
+        "name": "aclnnInplaceCopy_CastAiCore_Cast",
+        "count_per_step": 2.0,
+        "ms_per_step": 0.0037066666666666663
+      },
+      {
+        "name": "aclnnAdds_AddAiCore_Add",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.00298
+      },
+      {
+        "name": "aclnnGeScalar_GreaterEqual_GreaterEqual",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0026803333333333336
+      },
+      {
+        "name": "aclnnInplaceCopy_SliceAiCore_Slice",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0026533333333333335
+      },
+      {
+        "name": "aclnnAll_ReduceAll_ReduceAll",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0025800000000000003
+      },
+      {
+        "name": "aclnnClampMin_ClipByValueV2AiCore_ClipByValueV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0024333333333333334
+      },
+      {
+        "name": "aclnnDiv_RealDivAiCore_RealDiv",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0024066666666666668
+      },
+      {
+        "name": "aclnnInplaceFillScalar_FillAiCore_Fill",
+        "count_per_step": 2.0,
+        "ms_per_step": 0.0022400000000000002
+      }
+    ],
+    "host_selected_counts_per_step": {
+      "aten::copy_": 3.0,
+      "aten::_to_copy": 3.0,
+      "aten::to": 6.0,
+      "aten::reshape": 144.0,
+      "aten::transpose": 144.0,
+      "aten::lt": 1.0,
+      "npu::npu_fused_infer_attention_score": 24.0,
+      "aclnnLinalgVectorNorm": 1.0,
+      "aten::linalg_vector_norm": 1.0
+    }
+  },
+  "profile_A_fia_r01": {
+    "kernels_per_step": 580.0,
+    "computing_ms": 12.676852666666667,
+    "free_ms": 27.91283800000002,
+    "spans": [
+      {
+        "step": "2",
+        "span_ms": 40.44,
+        "union_ms": 12.6685,
+        "gap_ms": 27.7715
+      },
+      {
+        "step": "3",
+        "span_ms": 40.144,
+        "union_ms": 12.70075,
+        "gap_ms": 27.44325
+      },
+      {
+        "step": "4",
+        "span_ms": 40.11725,
+        "union_ms": 12.6505,
+        "gap_ms": 27.46675
+      }
+    ],
+    "kernels": [
+      {
+        "name": "aclnnAddmm_MatMulV3Common_MatMulV3",
+        "count_per_step": 48.0,
+        "ms_per_step": 3.695778333333333
+      },
+      {
+        "name": "aclnnAddmm_MatMulCommon_MatMulV2",
+        "count_per_step": 96.0,
+        "ms_per_step": 2.073012
+      },
+      {
+        "name": "FusedInferAttentionScore",
+        "count_per_step": 24.0,
+        "ms_per_step": 1.6757479999999998
+      },
+      {
+        "name": "aclnnLayerNormWithImplMode_LayerNormV4_LayerNormV4",
+        "count_per_step": 49.0,
+        "ms_per_step": 1.5704906666666665
+      },
+      {
+        "name": "aclnnInplaceCopy_TransposeAiCore_Transpose",
+        "count_per_step": 96.0,
+        "ms_per_step": 1.4423223333333333
+      },
+      {
+        "name": "aclnnGelu_Gelu_Gelu",
+        "count_per_step": 24.0,
+        "ms_per_step": 0.9964
+      },
+      {
+        "name": "aclnnAdd_AddAiCore_Add",
+        "count_per_step": 50.0,
+        "ms_per_step": 0.4418433333333333
+      },
+      {
+        "name": "aclnnLtScalar_LessAiCore_Less",
+        "count_per_step": 24.0,
+        "ms_per_step": 0.26162066666666667
+      },
+      {
+        "name": "aclnnAddmm_CastAiCore_Cast",
+        "count_per_step": 144.0,
+        "ms_per_step": 0.16866366666666666
+      },
+      {
+        "name": "aclnnIndex_IndexAiCpu_Index",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.16777666666666669
+      },
+      {
+        "name": "aclnnEmbedding_GatherV2AiCore_GatherV2",
+        "count_per_step": 3.0,
+        "ms_per_step": 0.06999466666666666
+      },
+      {
+        "name": "aclnnArange_ArangeAiCore_Range",
+        "count_per_step": 5.0,
+        "ms_per_step": 0.031060666666666667
+      },
+      {
+        "name": "aclnnBitwiseAndTensor_LogicalAndAiCore_LogicalAnd",
+        "count_per_step": 2.0,
+        "ms_per_step": 0.019813666666666667
+      },
+      {
+        "name": "aclnnSWhere_SelectV2AiCore_SelectV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.014053666666666667
+      },
+      {
+        "name": "aclnnIndex_IndexCheck_IndexCheck",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.012213333333333333
+      },
+      {
+        "name": "aclnnLinalgVectorNorm_LpNormV2_LpNormV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0071136666666666674
+      },
+      {
+        "name": "aclnnDiv_BroadcastToAiCore_BroadcastTo",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.007053666666666667
+      },
+      {
+        "name": "aclnnInplaceCopy_CastAiCore_Cast",
+        "count_per_step": 2.0,
+        "ms_per_step": 0.003926666666666667
+      },
+      {
+        "name": "aclnnAll_ReduceAll_ReduceAll",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0029333333333333334
+      },
+      {
+        "name": "aclnnAdds_AddAiCore_Add",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0028333333333333335
+      },
+      {
+        "name": "aclnnGeScalar_GreaterEqual_GreaterEqual",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.002687
+      },
+      {
+        "name": "aclnnDiv_RealDivAiCore_RealDiv",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0026203333333333335
+      },
+      {
+        "name": "aclnnInplaceFillScalar_FillAiCore_Fill",
+        "count_per_step": 2.0,
+        "ms_per_step": 0.00252
+      },
+      {
+        "name": "aclnnInplaceCopy_SliceAiCore_Slice",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0022736666666666665
+      },
+      {
+        "name": "aclnnClampMin_ClipByValueV2AiCore_ClipByValueV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0022733333333333334
+      }
+    ],
+    "host_selected_counts_per_step": {
+      "aten::copy_": 99.0,
+      "aten::_to_copy": 3.0,
+      "aten::to": 6.0,
+      "aten::reshape": 240.0,
+      "aten::transpose": 240.0,
+      "aten::lt": 24.0,
+      "aten::clone": 96.0,
+      "aten::contiguous": 96.0,
+      "npu::npu_fused_infer_attention_score": 24.0,
+      "aclnnLinalgVectorNorm": 1.0,
+      "aten::linalg_vector_norm": 1.0
+    }
+  },
+  "profile_A_fp32_r01": {
+    "kernels_per_step": 508.0,
+    "computing_ms": 28.184049666666684,
+    "free_ms": 10.207384000000054,
+    "spans": [
+      {
+        "step": "2",
+        "span_ms": 38.15175,
+        "union_ms": 28.166,
+        "gap_ms": 9.98575
+      },
+      {
+        "step": "3",
+        "span_ms": 38.17175,
+        "union_ms": 28.23,
+        "gap_ms": 9.94175
+      },
+      {
+        "step": "4",
+        "span_ms": 37.63075,
+        "union_ms": 28.13325,
+        "gap_ms": 9.4975
+      }
+    ],
+    "kernels": [
+      {
+        "name": "aclnnAddmm_MatMulCommon_MatMulV2",
+        "count_per_step": 144.0,
+        "ms_per_step": 19.285117333333332
+      },
+      {
+        "name": "aclnnLayerNormWithImplMode_LayerNormV3WithImplMode_LayerNormV3",
+        "count_per_step": 49.0,
+        "ms_per_step": 1.886445
+      },
+      {
+        "name": "aclnnSoftmax_SoftmaxAiCore_SoftmaxV2",
+        "count_per_step": 24.0,
+        "ms_per_step": 1.578051
+      },
+      {
+        "name": "aclnnMatmul_BatchMatMulNd_BatchMatMulV2",
+        "count_per_step": 48.0,
+        "ms_per_step": 1.1692606666666667
+      },
+      {
+        "name": "aclnnAdd_AddAiCore_Add",
+        "count_per_step": 74.0,
+        "ms_per_step": 1.1510163333333334
+      },
+      {
+        "name": "aclnnMatmul_TransposeAiCore_Transpose",
+        "count_per_step": 72.0,
+        "ms_per_step": 1.143157
+      },
+      {
+        "name": "aclnnGelu_Gelu_Gelu",
+        "count_per_step": 24.0,
+        "ms_per_step": 0.7324223333333333
+      },
+      {
+        "name": "aclnnMuls_MulAiCore_Mul",
+        "count_per_step": 24.0,
+        "ms_per_step": 0.43482166666666666
+      },
+      {
+        "name": "aclnnInplaceCopy_TransposeAiCore_Transpose",
+        "count_per_step": 24.0,
+        "ms_per_step": 0.42029133333333335
+      },
+      {
+        "name": "aclnnIndex_IndexAiCpu_Index",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.200204
+      },
+      {
+        "name": "aclnnEmbedding_GatherV2AiCore_GatherV2",
+        "count_per_step": 3.0,
+        "ms_per_step": 0.07048166666666666
+      },
+      {
+        "name": "aclnnArange_ArangeAiCore_Range",
+        "count_per_step": 5.0,
+        "ms_per_step": 0.029640666666666666
+      },
+      {
+        "name": "aclnnBitwiseAndTensor_LogicalAndAiCore_LogicalAnd",
+        "count_per_step": 2.0,
+        "ms_per_step": 0.018441
+      },
+      {
+        "name": "aclnnSWhere_SelectV2AiCore_SelectV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.016933666666666666
+      },
+      {
+        "name": "aclnnIndex_IndexCheck_IndexCheck",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.011754
+      },
+      {
+        "name": "aclnnLinalgVectorNorm_LpNormV2_LpNormV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0071266666666666674
+      },
+      {
+        "name": "aclnnDiv_BroadcastToAiCore_BroadcastTo",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.006466666666666667
+      },
+      {
+        "name": "aclnnAdds_AddAiCore_Add",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0027736666666666665
+      },
+      {
+        "name": "aclnnLinalgVectorNorm_SliceAiCore_Slice",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0027400000000000002
+      },
+      {
+        "name": "aclnnGeScalar_GreaterEqual_GreaterEqual",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0026803333333333336
+      },
+      {
+        "name": "aclnnAll_ReduceAll_ReduceAll",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.002673333333333333
+      },
+      {
+        "name": "aclnnDiv_SliceAiCore_Slice",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0026533333333333335
+      },
+      {
+        "name": "aclnnInplaceFillScalar_FillAiCore_Fill",
+        "count_per_step": 2.0,
+        "ms_per_step": 0.002513333333333333
+      },
+      {
+        "name": "aclnnDiv_RealDivAiCore_RealDiv",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0024933333333333335
+      },
+      {
+        "name": "aclnnClampMin_ClipByValueV2AiCore_ClipByValueV2",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.00228
+      },
+      {
+        "name": "aclnnInplaceCopy_CastAiCore_Cast",
+        "count_per_step": 1.0,
+        "ms_per_step": 0.0018066666666666667
+      }
+    ],
+    "host_selected_counts_per_step": {
+      "aten::copy_": 26.0,
+      "aten::_to_copy": 2.0,
+      "aten::to": 6.0,
+      "aten::reshape": 168.0,
+      "aten::transpose": 264.0,
+      "aten::_softmax": 24.0,
+      "aten::softmax": 24.0,
+      "aten::clone": 24.0,
+      "aten::contiguous": 24.0,
+      "aclnnLinalgVectorNorm": 1.0,
+      "aten::linalg_vector_norm": 1.0
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "torchair.json",
+  "name": "online_b1_torchair",
+  "batch_size": 1
+}

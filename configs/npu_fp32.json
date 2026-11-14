@@ -1,0 +1,4 @@
+{
+  "extends": "common.json",
+  "name": "npu_fp32"
+}

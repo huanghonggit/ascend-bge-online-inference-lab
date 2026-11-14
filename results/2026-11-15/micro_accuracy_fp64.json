@@ -1,0 +1,47 @@
+{
+  "note": "same seed/shapes/masks as micro_matched; cosine reduced in float64; no timing rerun",
+  "results": [
+    {
+      "s": 64,
+      "checks": {
+        "fia_core": {
+          "cosine": 0.9999956772496801,
+          "max_abs_error": 0.0009765625
+        },
+        "fia_bsh": {
+          "cosine": 0.9999956772496797,
+          "max_abs_error": 0.0009765625
+        },
+        "core_matches_installed_bert": true
+      }
+    },
+    {
+      "s": 256,
+      "checks": {
+        "fia_core": {
+          "cosine": 0.9999956438197333,
+          "max_abs_error": 0.000244140625
+        },
+        "fia_bsh": {
+          "cosine": 0.9999956438197337,
+          "max_abs_error": 0.000244140625
+        },
+        "core_matches_installed_bert": true
+      }
+    },
+    {
+      "s": 512,
+      "checks": {
+        "fia_core": {
+          "cosine": 0.9999956492796047,
+          "max_abs_error": 0.000244140625
+        },
+        "fia_bsh": {
+          "cosine": 0.9999956492796052,
+          "max_abs_error": 0.000244140625
+        },
+        "core_matches_installed_bert": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "provenance": "original synthetic teaching data; fictional policies; not an official evaluation set",
+  "counts": {
+    "corpus": 32,
+    "queries": 64,
+    "smoke": 8,
+    "perf_requests": 1024
+  },
+  "sha256": {
+    "corpus.jsonl": "206d26fdb2ae69ab6fc58bc55859cdd7c2f47d3c6a6db7b2cfdcdc5278c7424e",
+    "perf_requests.jsonl": "450c4ef1a469c50618b8d0a7314b239934ba80da141b8cad8e0f26a2ed083e92",
+    "qrels.tsv": "dc79c37b61feec37a32132151b1d16e20abc857b529cf66a459092fb0fb1ba8d",
+    "queries.jsonl": "808f45374a022f1bf35b40a97605f25c44fe3e5a52afac993c8cbab516615ff1",
+    "smoke.jsonl": "da1c640d511896c7c42e44eefab05111339720bb451fda756474b887d63450d1"
+  }
+}

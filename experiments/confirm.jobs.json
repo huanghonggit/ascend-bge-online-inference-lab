@@ -1,0 +1,1 @@
+[["D","bf16",1],["T","bf16",1],["D","fia_bsh",1],["T","fia_bsh",1],["T","fia_bsh",2],["D","fia_bsh",2],["T","bf16",2],["D","bf16",2],["D","bf16",3],["T","bf16",3],["D","fia_bsh",3],["T","fia_bsh",3],["A","graph_fp32",1],["A","graph_bf16",1],["A","fia_mask",1],["A","fia_mask",2],["A","graph_bf16",2],["A","graph_fp32",2],["A","graph_fp32",3],["A","graph_bf16",3],["A","fia_mask",3]]

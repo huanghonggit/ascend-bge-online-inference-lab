@@ -1,0 +1,91 @@
+{
+  "sources": [
+    {
+      "url": "https://www.hiascend.com/doc_center/source/en/Pytorch/2600/comref/Envvariables/docs/en/environment_variable_reference/CPU_AFFINITY_CONF.md",
+      "purpose": "自动绑核参数、模式和生效条件",
+      "sha256": "43d0b40aae2407c869ae1d960b809a945fb82f3f267cd1d94e18ed5a62faab1c",
+      "retrieved_date": "2026-11-15",
+      "access": "Original content was inspected during the experiment; linked, not redistributed."
+    },
+    {
+      "url": "https://www.hiascend.com/doc_center/source/en/Pytorch/2600/comref/Envvariables/docs/en/environment_variable_reference/TASK_QUEUE_ENABLE.md",
+      "purpose": "两级流水、阻塞模式和内存限制",
+      "sha256": "2589a9499805d7e48e78f73a6c61c141080f9d2e2d4a1aba5a989da4f57a5947",
+      "retrieved_date": "2026-11-15",
+      "access": "Original content was inspected during the experiment; linked, not redistributed."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Ascend/op-plugin/26.0.0/docs/zh/custom_APIs/torch_npu/torch_npu-npu_fused_infer_attention_score.md",
+      "purpose": "FIA支持的布局、参数与mask语义",
+      "revision": "26.0.0",
+      "sha256": "54ba94362c0417cca7e979a39f4100f3de9a7eea1895d38f89df04b387f6b0bd",
+      "retrieved_date": "2026-11-15",
+      "access": "Original content was inspected during the experiment; linked, not redistributed."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Ascend/pytorch/334dadc9a4a80a9c04ac6ec3c92182ccf525d46a/torch_npu/csrc/core/npu/NPUAffinityController.cpp",
+      "purpose": "核查自动绑核逻辑；运行时线程亲和取自实测",
+      "commit": "334dadc9a4a80a9c04ac6ec3c92182ccf525d46a",
+      "sha256": "fd28f51f1c75bd4a06eb8a40bdd32f620e57ba14dc95d848264a12501e7c5120",
+      "retrieved_date": "2026-11-15",
+      "access": "Original content was inspected during the experiment; linked, not redistributed."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Ascend/op-plugin/8b9c8534fa41eff367a41c155843daa530ab3a08/op_plugin/ops/opapi/AddmmKernelNpuOpApi.cpp",
+      "purpose": "与wheel绑定的op-plugin矩阵运算适配实现",
+      "commit": "8b9c8534fa41eff367a41c155843daa530ab3a08",
+      "sha256": "51d2013e8a7ef58debca3803ae45a443f69477fd54504512833268200b445ab0",
+      "retrieved_date": "2026-11-15",
+      "access": "Original content was inspected during the experiment; linked, not redistributed."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Ascend/op-plugin/8b9c8534fa41eff367a41c155843daa530ab3a08/op_plugin/ops/opapi/BmmKernelNpuOpApi.cpp",
+      "purpose": "与wheel绑定的op-plugin矩阵运算适配实现",
+      "commit": "8b9c8534fa41eff367a41c155843daa530ab3a08",
+      "sha256": "26abd3a5404155684bc2b912502da93bfeb2cf8c84abd1b28a18bba561fd453e",
+      "retrieved_date": "2026-11-15",
+      "access": "Original content was inspected during the experiment; linked, not redistributed."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Ascend/op-plugin/8b9c8534fa41eff367a41c155843daa530ab3a08/op_plugin/ops/opapi/MmKernelNpuOpApi.cpp",
+      "purpose": "与wheel绑定的op-plugin矩阵运算适配实现",
+      "commit": "8b9c8534fa41eff367a41c155843daa530ab3a08",
+      "sha256": "49a727b997272cb452139549c830beae86ccf6ea3ef1900a1720bf624d38f38f",
+      "retrieved_date": "2026-11-15",
+      "access": "Original content was inspected during the experiment; linked, not redistributed."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Ascend/op-plugin/8b9c8534fa41eff367a41c155843daa530ab3a08/docs/zh/custom_APIs/torch_npu-npu/torch_npu-npu-matmul-cubeMathType.md",
+      "purpose": "矩阵精度控制参数；实际设置见extra_probe及result.json",
+      "commit": "8b9c8534fa41eff367a41c155843daa530ab3a08",
+      "sha256": "191f23d86d93d898a0d943ffff86e56ad15a6bb75a2212c14a89f53e59832bf2",
+      "retrieved_date": "2026-11-15",
+      "access": "Original content was inspected during the experiment; linked, not redistributed."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Ascend/op-plugin/8b9c8534fa41eff367a41c155843daa530ab3a08/docs/zh/custom_APIs/torch_npu-npu/torch_npu-npu-matmul-allow_hf32.md",
+      "purpose": "矩阵精度控制参数；实际设置见extra_probe及result.json",
+      "commit": "8b9c8534fa41eff367a41c155843daa530ab3a08",
+      "sha256": "96fc5d03800c42b3c1aebfab4ef141a4b73fac93affaee7591c5332c9a012a52",
+      "retrieved_date": "2026-11-15",
+      "access": "Original content was inspected during the experiment; linked, not redistributed."
+    }
+  ],
+  "search_scope": [
+    "昇腾官网",
+    "GitCode Ascend 仓库",
+    "GitCode/CANN 算子仓库",
+    "Ascend 官方 GitHub 镜像"
+  ],
+  "additional_search_results": [
+    {
+      "url": "https://www.hiascend.com/document/detail/zh/Pytorch/700/ptmoddevg/trainingmigrguide/performance_tuning_0054.html",
+      "status": "官网检索结果支持流水与绑核方向；本报告参数细节优先以2600文档副本为准"
+    },
+    {
+      "url": "https://atomgit.com/cann/ops-transformer/blob/9.1.0-beta.1/attention/fused_infer_attention_score/op_host/fused_infer_attention_score_tiling.cpp",
+      "status": "CANN官方路径搜索命中，未取得完整正文，不作为当前9.1.0环境的内核因果证据"
+    }
+  ],
+  "interpretation": "实测数值来自本机输出；官方文档用于解释适用条件；源码不能替代运行时观测。搜索中的非官方fork没有用于结论。"
+}

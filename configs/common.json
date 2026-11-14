@@ -1,0 +1,13 @@
+{
+  "name": "common",
+  "device": "npu:0",
+  "dtype": "fp32",
+  "engine": "eager",
+  "attention": "eager",
+  "internal_format": false,
+  "batch_size": 8,
+  "max_length": 256,
+  "padding": "max_length",
+  "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+  "cpu_threads": 4
+}

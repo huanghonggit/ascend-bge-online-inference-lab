@@ -1,0 +1,5 @@
+{
+  "extends": "bf16.json",
+  "name": "torchair",
+  "engine": "torchair"
+}

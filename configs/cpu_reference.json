@@ -1,0 +1,5 @@
+{
+  "extends": "common.json",
+  "name": "cpu_reference",
+  "device": "cpu"
+}

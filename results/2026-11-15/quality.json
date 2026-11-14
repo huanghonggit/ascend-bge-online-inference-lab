@@ -1,0 +1,934 @@
+{
+  "bf16": {
+    "metadata": {
+      "config": {
+        "name": "bf16",
+        "device": "npu:0",
+        "dtype": "bf16",
+        "engine": "eager",
+        "attention": "eager",
+        "internal_format": false,
+        "batch_size": 8,
+        "max_length": 256,
+        "padding": "max_length",
+        "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+        "cpu_threads": 4
+      },
+      "packages": {
+        "python": "3.12.13",
+        "platform": "Linux-5.10.0-60.18.0.50.oe2203.aarch64-aarch64-with-glibc2.35",
+        "torch": "2.9.0",
+        "torch-npu": "2.9.0.post6",
+        "transformers": "5.3.0",
+        "tokenizers": "0.22.2",
+        "numpy": "2.2.6",
+        "huggingface-hub": "1.6.0",
+        "safetensors": "0.7.0",
+        "torchair": null
+      },
+      "model": {
+        "manifest_sha256": "25abc3051dca4f44d260e2c1c101a21a9eb63858b2896cd90834f4c612dabaae",
+        "repo_id": "BAAI/bge-large-zh-v1.5",
+        "revision": "79e7739b6ab944e86d6171e44d24c997fc1e0116",
+        "integrity_check": "run prepare_model.py --verify before class"
+      },
+      "device_name": "Ascend910B3",
+      "embedding_dim": 1024,
+      "replaced_attention_layers": 0,
+      "compiled_graphs": 0,
+      "load_and_setup_ms": 1137.1076898649335
+    },
+    "ids": {
+      "corpus": [
+        "d001",
+        "d002",
+        "d003",
+        "d004",
+        "d005",
+        "d006",
+        "d007",
+        "d008",
+        "d009",
+        "d010",
+        "d011",
+        "d012",
+        "d013",
+        "d014",
+        "d015",
+        "d016",
+        "d017",
+        "d018",
+        "d019",
+        "d020",
+        "d021",
+        "d022",
+        "d023",
+        "d024",
+        "d025",
+        "d026",
+        "d027",
+        "d028",
+        "d029",
+        "d030",
+        "d031",
+        "d032"
+      ],
+      "queries": [
+        "q001",
+        "q002",
+        "q003",
+        "q004",
+        "q005",
+        "q006",
+        "q007",
+        "q008",
+        "q009",
+        "q010",
+        "q011",
+        "q012",
+        "q013",
+        "q014",
+        "q015",
+        "q016",
+        "q017",
+        "q018",
+        "q019",
+        "q020",
+        "q021",
+        "q022",
+        "q023",
+        "q024",
+        "q025",
+        "q026",
+        "q027",
+        "q028",
+        "q029",
+        "q030",
+        "q031",
+        "q032",
+        "q033",
+        "q034",
+        "q035",
+        "q036",
+        "q037",
+        "q038",
+        "q039",
+        "q040",
+        "q041",
+        "q042",
+        "q043",
+        "q044",
+        "q045",
+        "q046",
+        "q047",
+        "q048",
+        "q049",
+        "q050",
+        "q051",
+        "q052",
+        "q053",
+        "q054",
+        "q055",
+        "q056",
+        "q057",
+        "q058",
+        "q059",
+        "q060",
+        "q061",
+        "q062",
+        "q063",
+        "q064"
+      ],
+      "smoke": [
+        "s001",
+        "s002",
+        "s003",
+        "s004",
+        "s005",
+        "s006",
+        "s007",
+        "s008"
+      ]
+    },
+    "semantic_contract": {
+      "max_length": 256,
+      "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+      "pooling": "CLS_FP32_L2",
+      "padding_side": "right"
+    },
+    "data_hashes": {
+      "corpus.jsonl": "206d26fdb2ae69ab6fc58bc55859cdd7c2f47d3c6a6db7b2cfdcdc5278c7424e",
+      "queries.jsonl": "808f45374a022f1bf35b40a97605f25c44fe3e5a52afac993c8cbab516615ff1",
+      "smoke.jsonl": "da1c640d511896c7c42e44eefab05111339720bb451fda756474b887d63450d1",
+      "qrels.tsv": "dc79c37b61feec37a32132151b1d16e20abc857b529cf66a459092fb0fb1ba8d"
+    },
+    "token_hashes": {
+      "corpus": "2a47ad80940e81b294d1aea9560e68216e95541a63525f672f9b556dce71c2ff",
+      "queries": "2f9859cbba4051ba1fa46d9a31b37a9c24bad19809505ee903fdb6f93ad9648f",
+      "smoke": "aea4ee1056c3fcbd4e281cb7ddf2dd5a4c2b6bf092e1153e8e9bf64ad2ec3121"
+    },
+    "retrieval": {
+      "recall1": 0.890625,
+      "recall5": 1,
+      "mrr10": 0.9453125
+    },
+    "vector_checks": {
+      "corpus": {
+        "finite": true,
+        "max_norm_error": 1.1920928955078125e-7
+      },
+      "queries": {
+        "finite": true,
+        "max_norm_error": 5.960464477539063e-8
+      },
+      "smoke": {
+        "finite": true,
+        "max_norm_error": 5.960464477539063e-8
+      }
+    },
+    "status": "passed",
+    "comparison": {
+      "passed": true,
+      "checks": {
+        "corpus": true,
+        "queries": true,
+        "smoke": true,
+        "retrieval": true
+      },
+      "vectors": {
+        "corpus": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.9999390135297317,
+          "min_cosine": 0.9999158974082228,
+          "max_abs_error": 0.003260374069213867,
+          "max_norm_error": 7.372306620734292e-8
+        },
+        "queries": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.9999390969112358,
+          "min_cosine": 0.9999151301391019,
+          "max_abs_error": 0.002507859840989113,
+          "max_norm_error": 9.269722889282406e-8
+        },
+        "smoke": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.9999231084353574,
+          "min_cosine": 0.9998854323090874,
+          "max_abs_error": 0.0017503201961517334,
+          "max_norm_error": 4.465543079756884e-8
+        }
+      },
+      "recall5_drop": 0,
+      "mrr10_drop": 0,
+      "reference": "runs/ref_cpu_fp32 (regenerate on your host)",
+      "gate": {
+        "note": "教学初始门槛，非官方BGE精度标准；教师预演后冻结，禁止看完候选结果再放宽。",
+        "min_mean_cosine": 0.995,
+        "min_sample_cosine": 0.98,
+        "max_abs_error": 0.05,
+        "max_norm_error": 0.0002,
+        "max_recall5_drop": 0.015625,
+        "max_mrr10_drop": 0.02
+      }
+    }
+  },
+  "fia_bsh": {
+    "metadata": {
+      "config": {
+        "name": "bf16",
+        "device": "npu:0",
+        "dtype": "bf16",
+        "engine": "eager",
+        "attention": "eager",
+        "internal_format": false,
+        "batch_size": 8,
+        "max_length": 256,
+        "padding": "max_length",
+        "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+        "cpu_threads": 4
+      },
+      "packages": {
+        "python": "3.12.13",
+        "platform": "Linux-5.10.0-60.18.0.50.oe2203.aarch64-aarch64-with-glibc2.35",
+        "torch": "2.9.0",
+        "torch-npu": "2.9.0.post6",
+        "transformers": "5.3.0",
+        "tokenizers": "0.22.2",
+        "numpy": "2.2.6",
+        "huggingface-hub": "1.6.0",
+        "safetensors": "0.7.0",
+        "torchair": null
+      },
+      "model": {
+        "manifest_sha256": "25abc3051dca4f44d260e2c1c101a21a9eb63858b2896cd90834f4c612dabaae",
+        "repo_id": "BAAI/bge-large-zh-v1.5",
+        "revision": "79e7739b6ab944e86d6171e44d24c997fc1e0116",
+        "integrity_check": "run prepare_model.py --verify before class"
+      },
+      "device_name": "Ascend910B3",
+      "embedding_dim": 1024,
+      "replaced_attention_layers": 24,
+      "compiled_graphs": 0,
+      "load_and_setup_ms": 909.0300598181784
+    },
+    "ids": {
+      "corpus": [
+        "d001",
+        "d002",
+        "d003",
+        "d004",
+        "d005",
+        "d006",
+        "d007",
+        "d008",
+        "d009",
+        "d010",
+        "d011",
+        "d012",
+        "d013",
+        "d014",
+        "d015",
+        "d016",
+        "d017",
+        "d018",
+        "d019",
+        "d020",
+        "d021",
+        "d022",
+        "d023",
+        "d024",
+        "d025",
+        "d026",
+        "d027",
+        "d028",
+        "d029",
+        "d030",
+        "d031",
+        "d032"
+      ],
+      "queries": [
+        "q001",
+        "q002",
+        "q003",
+        "q004",
+        "q005",
+        "q006",
+        "q007",
+        "q008",
+        "q009",
+        "q010",
+        "q011",
+        "q012",
+        "q013",
+        "q014",
+        "q015",
+        "q016",
+        "q017",
+        "q018",
+        "q019",
+        "q020",
+        "q021",
+        "q022",
+        "q023",
+        "q024",
+        "q025",
+        "q026",
+        "q027",
+        "q028",
+        "q029",
+        "q030",
+        "q031",
+        "q032",
+        "q033",
+        "q034",
+        "q035",
+        "q036",
+        "q037",
+        "q038",
+        "q039",
+        "q040",
+        "q041",
+        "q042",
+        "q043",
+        "q044",
+        "q045",
+        "q046",
+        "q047",
+        "q048",
+        "q049",
+        "q050",
+        "q051",
+        "q052",
+        "q053",
+        "q054",
+        "q055",
+        "q056",
+        "q057",
+        "q058",
+        "q059",
+        "q060",
+        "q061",
+        "q062",
+        "q063",
+        "q064"
+      ],
+      "smoke": [
+        "s001",
+        "s002",
+        "s003",
+        "s004",
+        "s005",
+        "s006",
+        "s007",
+        "s008"
+      ]
+    },
+    "semantic_contract": {
+      "max_length": 256,
+      "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+      "pooling": "CLS_FP32_L2",
+      "padding_side": "right"
+    },
+    "data_hashes": {
+      "corpus.jsonl": "206d26fdb2ae69ab6fc58bc55859cdd7c2f47d3c6a6db7b2cfdcdc5278c7424e",
+      "queries.jsonl": "808f45374a022f1bf35b40a97605f25c44fe3e5a52afac993c8cbab516615ff1",
+      "smoke.jsonl": "da1c640d511896c7c42e44eefab05111339720bb451fda756474b887d63450d1",
+      "qrels.tsv": "dc79c37b61feec37a32132151b1d16e20abc857b529cf66a459092fb0fb1ba8d"
+    },
+    "token_hashes": {
+      "corpus": "2a47ad80940e81b294d1aea9560e68216e95541a63525f672f9b556dce71c2ff",
+      "queries": "2f9859cbba4051ba1fa46d9a31b37a9c24bad19809505ee903fdb6f93ad9648f",
+      "smoke": "aea4ee1056c3fcbd4e281cb7ddf2dd5a4c2b6bf092e1153e8e9bf64ad2ec3121"
+    },
+    "retrieval": {
+      "recall1": 0.890625,
+      "recall5": 1,
+      "mrr10": 0.9453125
+    },
+    "vector_checks": {
+      "corpus": {
+        "finite": true,
+        "max_norm_error": 1.1920928955078125e-7
+      },
+      "queries": {
+        "finite": true,
+        "max_norm_error": 5.960464477539063e-8
+      },
+      "smoke": {
+        "finite": true,
+        "max_norm_error": 0
+      }
+    },
+    "status": "passed",
+    "comparison": {
+      "passed": true,
+      "checks": {
+        "corpus": true,
+        "queries": true,
+        "smoke": true,
+        "retrieval": true
+      },
+      "vectors": {
+        "corpus": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.9999445993089968,
+          "min_cosine": 0.9999293073888613,
+          "max_abs_error": 0.0027175843715667725,
+          "max_norm_error": 7.486036768256099e-8
+        },
+        "queries": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.9999432728869837,
+          "min_cosine": 0.9999253661514381,
+          "max_abs_error": 0.002671821042895317,
+          "max_norm_error": 7.949699687426204e-8
+        },
+        "smoke": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.999930961194441,
+          "min_cosine": 0.9999128498934104,
+          "max_abs_error": 0.0023247860372066498,
+          "max_norm_error": 7.137071422746999e-8
+        }
+      },
+      "recall5_drop": 0,
+      "mrr10_drop": 0,
+      "reference": "runs/ref_cpu_fp32 (regenerate on your host)",
+      "gate": {
+        "note": "教学初始门槛，非官方BGE精度标准；教师预演后冻结，禁止看完候选结果再放宽。",
+        "min_mean_cosine": 0.995,
+        "min_sample_cosine": 0.98,
+        "max_abs_error": 0.05,
+        "max_norm_error": 0.0002,
+        "max_recall5_drop": 0.015625,
+        "max_mrr10_drop": 0.02
+      }
+    }
+  },
+  "graph_bf16": {
+    "metadata": {
+      "config": {
+        "name": "bf16",
+        "device": "npu:0",
+        "dtype": "bf16",
+        "engine": "torchair",
+        "attention": "eager",
+        "internal_format": false,
+        "batch_size": 8,
+        "max_length": 256,
+        "padding": "max_length",
+        "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+        "cpu_threads": 4
+      },
+      "packages": {
+        "python": "3.12.13",
+        "platform": "Linux-5.10.0-60.18.0.50.oe2203.aarch64-aarch64-with-glibc2.35",
+        "torch": "2.9.0",
+        "torch-npu": "2.9.0.post6",
+        "transformers": "5.3.0",
+        "tokenizers": "0.22.2",
+        "numpy": "2.2.6",
+        "huggingface-hub": "1.6.0",
+        "safetensors": "0.7.0",
+        "torchair": null
+      },
+      "model": {
+        "manifest_sha256": "25abc3051dca4f44d260e2c1c101a21a9eb63858b2896cd90834f4c612dabaae",
+        "repo_id": "BAAI/bge-large-zh-v1.5",
+        "revision": "79e7739b6ab944e86d6171e44d24c997fc1e0116",
+        "integrity_check": "run prepare_model.py --verify before class"
+      },
+      "device_name": "Ascend910B3",
+      "embedding_dim": 1024,
+      "replaced_attention_layers": 0,
+      "compiled_graphs": 1,
+      "load_and_setup_ms": 906.6385999321938
+    },
+    "ids": {
+      "corpus": [
+        "d001",
+        "d002",
+        "d003",
+        "d004",
+        "d005",
+        "d006",
+        "d007",
+        "d008",
+        "d009",
+        "d010",
+        "d011",
+        "d012",
+        "d013",
+        "d014",
+        "d015",
+        "d016",
+        "d017",
+        "d018",
+        "d019",
+        "d020",
+        "d021",
+        "d022",
+        "d023",
+        "d024",
+        "d025",
+        "d026",
+        "d027",
+        "d028",
+        "d029",
+        "d030",
+        "d031",
+        "d032"
+      ],
+      "queries": [
+        "q001",
+        "q002",
+        "q003",
+        "q004",
+        "q005",
+        "q006",
+        "q007",
+        "q008",
+        "q009",
+        "q010",
+        "q011",
+        "q012",
+        "q013",
+        "q014",
+        "q015",
+        "q016",
+        "q017",
+        "q018",
+        "q019",
+        "q020",
+        "q021",
+        "q022",
+        "q023",
+        "q024",
+        "q025",
+        "q026",
+        "q027",
+        "q028",
+        "q029",
+        "q030",
+        "q031",
+        "q032",
+        "q033",
+        "q034",
+        "q035",
+        "q036",
+        "q037",
+        "q038",
+        "q039",
+        "q040",
+        "q041",
+        "q042",
+        "q043",
+        "q044",
+        "q045",
+        "q046",
+        "q047",
+        "q048",
+        "q049",
+        "q050",
+        "q051",
+        "q052",
+        "q053",
+        "q054",
+        "q055",
+        "q056",
+        "q057",
+        "q058",
+        "q059",
+        "q060",
+        "q061",
+        "q062",
+        "q063",
+        "q064"
+      ],
+      "smoke": [
+        "s001",
+        "s002",
+        "s003",
+        "s004",
+        "s005",
+        "s006",
+        "s007",
+        "s008"
+      ]
+    },
+    "semantic_contract": {
+      "max_length": 256,
+      "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+      "pooling": "CLS_FP32_L2",
+      "padding_side": "right"
+    },
+    "data_hashes": {
+      "corpus.jsonl": "206d26fdb2ae69ab6fc58bc55859cdd7c2f47d3c6a6db7b2cfdcdc5278c7424e",
+      "queries.jsonl": "808f45374a022f1bf35b40a97605f25c44fe3e5a52afac993c8cbab516615ff1",
+      "smoke.jsonl": "da1c640d511896c7c42e44eefab05111339720bb451fda756474b887d63450d1",
+      "qrels.tsv": "dc79c37b61feec37a32132151b1d16e20abc857b529cf66a459092fb0fb1ba8d"
+    },
+    "token_hashes": {
+      "corpus": "2a47ad80940e81b294d1aea9560e68216e95541a63525f672f9b556dce71c2ff",
+      "queries": "2f9859cbba4051ba1fa46d9a31b37a9c24bad19809505ee903fdb6f93ad9648f",
+      "smoke": "aea4ee1056c3fcbd4e281cb7ddf2dd5a4c2b6bf092e1153e8e9bf64ad2ec3121"
+    },
+    "retrieval": {
+      "recall1": 0.890625,
+      "recall5": 1,
+      "mrr10": 0.9453125
+    },
+    "vector_checks": {
+      "corpus": {
+        "finite": true,
+        "max_norm_error": 1.1920928955078125e-7
+      },
+      "queries": {
+        "finite": true,
+        "max_norm_error": 1.1920928955078125e-7
+      },
+      "smoke": {
+        "finite": true,
+        "max_norm_error": 5.960464477539063e-8
+      }
+    },
+    "status": "passed",
+    "comparison": {
+      "passed": true,
+      "checks": {
+        "corpus": true,
+        "queries": true,
+        "smoke": true,
+        "retrieval": true
+      },
+      "vectors": {
+        "corpus": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.9999514932779732,
+          "min_cosine": 0.999934419687899,
+          "max_abs_error": 0.0018986612558364868,
+          "max_norm_error": 7.456480433098989e-8
+        },
+        "queries": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.9999526722025558,
+          "min_cosine": 0.99993283661225,
+          "max_abs_error": 0.002139344811439514,
+          "max_norm_error": 8.579602861491509e-8
+        },
+        "smoke": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.9999404122893628,
+          "min_cosine": 0.9999243194536462,
+          "max_abs_error": 0.0023187100887298584,
+          "max_norm_error": 6.92161969961802e-8
+        }
+      },
+      "recall5_drop": 0,
+      "mrr10_drop": 0,
+      "reference": "runs/ref_cpu_fp32 (regenerate on your host)",
+      "gate": {
+        "note": "教学初始门槛，非官方BGE精度标准；教师预演后冻结，禁止看完候选结果再放宽。",
+        "min_mean_cosine": 0.995,
+        "min_sample_cosine": 0.98,
+        "max_abs_error": 0.05,
+        "max_norm_error": 0.0002,
+        "max_recall5_drop": 0.015625,
+        "max_mrr10_drop": 0.02
+      }
+    }
+  },
+  "graph_fp32": {
+    "metadata": {
+      "config": {
+        "name": "npu_fp32",
+        "device": "npu:0",
+        "dtype": "fp32",
+        "engine": "torchair",
+        "attention": "eager",
+        "internal_format": false,
+        "batch_size": 8,
+        "max_length": 256,
+        "padding": "max_length",
+        "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+        "cpu_threads": 4
+      },
+      "packages": {
+        "python": "3.12.13",
+        "platform": "Linux-5.10.0-60.18.0.50.oe2203.aarch64-aarch64-with-glibc2.35",
+        "torch": "2.9.0",
+        "torch-npu": "2.9.0.post6",
+        "transformers": "5.3.0",
+        "tokenizers": "0.22.2",
+        "numpy": "2.2.6",
+        "huggingface-hub": "1.6.0",
+        "safetensors": "0.7.0",
+        "torchair": null
+      },
+      "model": {
+        "manifest_sha256": "25abc3051dca4f44d260e2c1c101a21a9eb63858b2896cd90834f4c612dabaae",
+        "repo_id": "BAAI/bge-large-zh-v1.5",
+        "revision": "79e7739b6ab944e86d6171e44d24c997fc1e0116",
+        "integrity_check": "run prepare_model.py --verify before class"
+      },
+      "device_name": "Ascend910B3",
+      "embedding_dim": 1024,
+      "replaced_attention_layers": 0,
+      "compiled_graphs": 1,
+      "load_and_setup_ms": 2637.753909919411
+    },
+    "ids": {
+      "corpus": [
+        "d001",
+        "d002",
+        "d003",
+        "d004",
+        "d005",
+        "d006",
+        "d007",
+        "d008",
+        "d009",
+        "d010",
+        "d011",
+        "d012",
+        "d013",
+        "d014",
+        "d015",
+        "d016",
+        "d017",
+        "d018",
+        "d019",
+        "d020",
+        "d021",
+        "d022",
+        "d023",
+        "d024",
+        "d025",
+        "d026",
+        "d027",
+        "d028",
+        "d029",
+        "d030",
+        "d031",
+        "d032"
+      ],
+      "queries": [
+        "q001",
+        "q002",
+        "q003",
+        "q004",
+        "q005",
+        "q006",
+        "q007",
+        "q008",
+        "q009",
+        "q010",
+        "q011",
+        "q012",
+        "q013",
+        "q014",
+        "q015",
+        "q016",
+        "q017",
+        "q018",
+        "q019",
+        "q020",
+        "q021",
+        "q022",
+        "q023",
+        "q024",
+        "q025",
+        "q026",
+        "q027",
+        "q028",
+        "q029",
+        "q030",
+        "q031",
+        "q032",
+        "q033",
+        "q034",
+        "q035",
+        "q036",
+        "q037",
+        "q038",
+        "q039",
+        "q040",
+        "q041",
+        "q042",
+        "q043",
+        "q044",
+        "q045",
+        "q046",
+        "q047",
+        "q048",
+        "q049",
+        "q050",
+        "q051",
+        "q052",
+        "q053",
+        "q054",
+        "q055",
+        "q056",
+        "q057",
+        "q058",
+        "q059",
+        "q060",
+        "q061",
+        "q062",
+        "q063",
+        "q064"
+      ],
+      "smoke": [
+        "s001",
+        "s002",
+        "s003",
+        "s004",
+        "s005",
+        "s006",
+        "s007",
+        "s008"
+      ]
+    },
+    "semantic_contract": {
+      "max_length": 256,
+      "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+      "pooling": "CLS_FP32_L2",
+      "padding_side": "right"
+    },
+    "data_hashes": {
+      "corpus.jsonl": "206d26fdb2ae69ab6fc58bc55859cdd7c2f47d3c6a6db7b2cfdcdc5278c7424e",
+      "queries.jsonl": "808f45374a022f1bf35b40a97605f25c44fe3e5a52afac993c8cbab516615ff1",
+      "smoke.jsonl": "da1c640d511896c7c42e44eefab05111339720bb451fda756474b887d63450d1",
+      "qrels.tsv": "dc79c37b61feec37a32132151b1d16e20abc857b529cf66a459092fb0fb1ba8d"
+    },
+    "token_hashes": {
+      "corpus": "2a47ad80940e81b294d1aea9560e68216e95541a63525f672f9b556dce71c2ff",
+      "queries": "2f9859cbba4051ba1fa46d9a31b37a9c24bad19809505ee903fdb6f93ad9648f",
+      "smoke": "aea4ee1056c3fcbd4e281cb7ddf2dd5a4c2b6bf092e1153e8e9bf64ad2ec3121"
+    },
+    "retrieval": {
+      "recall1": 0.890625,
+      "recall5": 1,
+      "mrr10": 0.9453125
+    },
+    "vector_checks": {
+      "corpus": {
+        "finite": true,
+        "max_norm_error": 5.960464477539063e-8
+      },
+      "queries": {
+        "finite": true,
+        "max_norm_error": 1.1920928955078125e-7
+      },
+      "smoke": {
+        "finite": true,
+        "max_norm_error": 5.960464477539063e-8
+      }
+    },
+    "status": "passed",
+    "comparison": {
+      "passed": true,
+      "checks": {
+        "corpus": true,
+        "queries": true,
+        "smoke": true,
+        "retrieval": true
+      },
+      "vectors": {
+        "corpus": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.999997838923911,
+          "min_cosine": 0.9999961471992138,
+          "max_abs_error": 0.0003256462514400482,
+          "max_norm_error": 5.108347989057904e-8
+        },
+        "queries": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.999998142729713,
+          "min_cosine": 0.9999976539226784,
+          "max_abs_error": 0.0005565136671066284,
+          "max_norm_error": 1.0056984178774542e-7
+        },
+        "smoke": {
+          "finite_and_same_shape": true,
+          "mean_cosine": 0.999997711077391,
+          "min_cosine": 0.99999647487306,
+          "max_abs_error": 0.00033345073461532593,
+          "max_norm_error": 5.1711340098847813e-8
+        }
+      },
+      "recall5_drop": 0,
+      "mrr10_drop": 0,
+      "reference": "runs/ref_cpu_fp32 (regenerate on your host)",
+      "gate": {
+        "note": "教学初始门槛，非官方BGE精度标准；教师预演后冻结，禁止看完候选结果再放宽。",
+        "min_mean_cosine": 0.995,
+        "min_sample_cosine": 0.98,
+        "max_abs_error": 0.05,
+        "max_norm_error": 0.0002,
+        "max_recall5_drop": 0.015625,
+        "max_mrr10_drop": 0.02
+      }
+    }
+  }
+}

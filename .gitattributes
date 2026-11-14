@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+# Preserve the exact bytes covered by the published data hash manifests.
+data/** -text whitespace=cr-at-eol
+results/** -text whitespace=cr-at-eol

@@ -1,0 +1,9 @@
+{
+  "note": "教学初始门槛，非官方BGE精度标准；教师预演后冻结，禁止看完候选结果再放宽。",
+  "min_mean_cosine": 0.995,
+  "min_sample_cosine": 0.98,
+  "max_abs_error": 0.05,
+  "max_norm_error": 0.0002,
+  "max_recall5_drop": 0.015625,
+  "max_mrr10_drop": 0.02
+}

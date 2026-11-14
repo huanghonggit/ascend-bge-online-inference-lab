@@ -1,0 +1,5 @@
+{
+  "extends": "common.json",
+  "name": "bf16",
+  "dtype": "bf16"
+}
